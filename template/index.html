@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang=""en">
-<div clas="grid-container">
+<div class="grid-container">
     <header class="header">
         <div class="brand">
             <button onclick="openMenu()">&#9776;</button>
@@ -10,16 +10,15 @@
             <a href="cart.html">Cart</a>
             <a href="signin.html"> Sign In</a>
         </div>
-    </header>
+</header>
+
 <head>
     <title>Scrawny Spiders</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
+
 <body>
     <div>
-        <header>
-            Scrawny Spiders
-        </header>
         <aside class="sidebar">
             <h3>Shopping Categories</h3>
             <button class="sidebar-close-button" onclick="closeMenu()">x</button>
@@ -94,12 +93,13 @@
                 </ui>
             </div>
         </main>
-        <footer>
+        <footer class="footer">
             &copy; 2022 Scrawny Spider
         </footer>
     </div>
 </body>
 </div>
+
 <script>
     function openMenu() {
         document.querySelector(".sidebar").classList.add("open");
